@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:freshers_hackathon/welcomeScreen.dart';
 import 'task_status.dart';
 import 'registrationScreen.dart';
 import 'loginScreen.dart';
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: appTitle,
-      home: MyHomePage(title: appTitle),
+      home: MyHomePage(title: "Hello"),
     );
   }
 }
