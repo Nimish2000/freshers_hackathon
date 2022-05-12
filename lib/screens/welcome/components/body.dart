@@ -4,6 +4,8 @@ import 'package:freshers_hackathon/screens/welcome/components/background.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:freshers_hackathon/constants.dart';
 import 'package:freshers_hackathon/widgets/rounded_button.dart';
+import 'package:freshers_hackathon/screens/login/login_screen.dart';
+import 'package:freshers_hackathon/screens/signup/sign_up.dart';
 
 class Body extends StatelessWidget {
   const Body({Key? key}) : super(key: key);
@@ -31,7 +33,14 @@ class Body extends StatelessWidget {
             RoundedButton(
               text: "Login",
               press: (){
-                print("Login is pressed");
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return LoginScreen();
+                    },
+                  ),
+                );
               },
             ),
             SizedBox(height: size.height * 0.03),
@@ -40,7 +49,14 @@ class Body extends StatelessWidget {
               color: kPrimaryLightColor,
               textColor: Colors.black,
               press: (){
-                print("Sigunp is pressed");
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return SignUpScreen();
+                    },
+                  ),
+                );
               },
             ),
           ],
