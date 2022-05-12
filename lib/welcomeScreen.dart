@@ -64,14 +64,14 @@ class _welcomeScreenState extends State<welcomeScreen> {
               height: 10.0,
             ),
             Container(
-              child: Image.asset('Assets/party.jpg'),
+              child: Image.asset('assets/images/party.jpg'),
             ),
             SizedBox(
               height: 10.0,
             ),
             Container(
               height: 200.0,
-              child: Image.asset('Assets/register.jpeg'),
+              child: Image.asset('assets/images/register.jpeg'),
             ),
             SizedBox(
               height: 10.0,

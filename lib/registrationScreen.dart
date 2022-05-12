@@ -57,7 +57,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                   tag: 'Freshers 2K21',
                   child: Container(
                     height: 130.0,
-                    child: Image.asset('Assets/register.jpeg'),
+                    child: Image.asset('assets/images/register.jpeg'),
                   ),
                 ),
               ),

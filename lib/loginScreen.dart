@@ -55,7 +55,7 @@ class _LoginScreenState extends State<LoginScreen> {
               tag: 'Login',
               child: Container(
                 height: 130.0,
-                child: Image.asset('Assets/login.jpeg'),
+                child: Image.asset('assets/images/login.jpeg'),
               ),
             ),
             SizedBox(

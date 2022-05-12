@@ -4,6 +4,8 @@ import 'task_status.dart';
 import 'registrationScreen.dart';
 import 'loginScreen.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:freshers_hackathon/screens/welcome/welcome_screen.dart';
+import 'constants.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -18,10 +20,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return  MaterialApp(
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+         primaryColor: kPrimaryColor,
+        scaffoldBackgroundColor: Colors.white,
+      ),
       title: appTitle,
-      home: MyHomePage(title: "Hello"),
+      home: WelcomeScreen(),
     );
   }
 }
@@ -53,7 +59,7 @@ class MyHomePage extends StatelessWidget {
             ),
             CircleAvatar(
               radius: 80.0,
-              child: Image.asset('Assets/party.jpg'),
+              child: Image.asset('assets/images/party.jpg'),
             ),
             SizedBox(
               height: 48.0,
