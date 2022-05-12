@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:freshers_hackathon/screens/signup/sign_up.dart';
 import 'package:freshers_hackathon/welcomeScreen.dart';
 import 'task_status.dart';
-import 'registrationScreen.dart';
-import 'loginScreen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:freshers_hackathon/screens/welcome/welcome_screen.dart';
 import 'constants.dart';
+import 'package:freshers_hackathon/screens/login/login_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -16,22 +16,22 @@ void main() async {
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
-  static const appTitle = 'Freshers Admin';
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-         primaryColor: kPrimaryColor,
+        primaryColor: kPrimaryColor,
         scaffoldBackgroundColor: Colors.white,
       ),
-      title: appTitle,
-      home: WelcomeScreen(),
+      title: "Welcome",
       initialRoute: WelcomeScreen.id,
       routes: {
-        WelcomeScreen.id: (context)=> WelcomeScreen(),
+        WelcomeScreen.id: (context) => WelcomeScreen(),
+        LoginScreen.id: (context) => LoginScreen(),
+        SignUpScreen.id: (context) => SignUpScreen(),
+        welcomeScreen.id: (context) => welcomeScreen(),
       },
     );
   }
 }
-
