@@ -1,13 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'task_status.dart';
-import 'registrationScreen.dart';
-import 'loginScreen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'budgetTracker.dart';
 
 class welcomeScreen extends StatefulWidget {
+  static const String id = "Welcome_screen";
   const welcomeScreen({Key? key}) : super(key: key);
 
   @override
